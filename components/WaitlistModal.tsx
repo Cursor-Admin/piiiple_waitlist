@@ -41,7 +41,7 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
           exit={{ opacity: 0 }}
         >
           <motion.div
-            className="bg-white rounded-2xl p-8 max-w-md w-full relative"
+            className="bg-white rounded-2xl p-8 max-w-md w-full relative text-black"
             initial={{ scale: 0.9, opacity: 0, y: -40 }}
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.9, opacity: 0, y: -40 }}
@@ -78,7 +78,7 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
 
                 <form
                   onSubmit={handleSubmit}
-                  className="flex flex-col space-y-4"
+                  className="flex flex-col space-y-4 text-left"
                 >
                   <div className="flex flex-col">
                     <label className="font-medium mb-1">First name</label>

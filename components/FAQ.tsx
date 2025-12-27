@@ -22,21 +22,35 @@ export default function FAQ() {
   ];
 
   return (
-    <div className="w-full py-6 flex flex-col gap-6 sm:py-16 sm:px-0 sm:flex-row sm:justify-between max-w-6xl mx-auto px-6 md:px-0" id='faqs'>
-      <div className="mb-2 sm:mb-0 w-full md:w-1/2 flex flex-col items-center md:items-start">
-        <h1 className="text-lg font-bold mb-1 sm:text-3xl lg:text-4xl sm:mb-4">Frequently Asked <br className='hidden md:block'/> Questions</h1>
-        <p className="grey-text text-xs sm:text-sm lg:text-base">Here are answers to some questions you might have.</p>
-      </div>
-      <div className="flex flex-col gap-2 w-full sm:w-2/3 md:w-2/3 lg:w-3/4">
-        {faqData.map((item, index) => (
-          <Accordion
-            key={index}
-            question={item.question}
-            answer={item.answer}
-          />
-        ))}
-        <p className='font-[500] text-[#767C8D]'>Have more questions, contact <a href="mailto:hello@piiiple.com" className='font-[600] text-[#2F88FF]'>hello@piiiple.com</a> via email.</p>
-      </div>
-    </div>
-  )
+		<div
+			className='w-full py-6 flex flex-col gap-6 sm:py-16 sm:px-0 sm:flex-row sm:justify-between max-w-6xl mx-auto px-6 md:px-0'
+			id='faqs'>
+			<div className='mb-2 sm:mb-0 w-full md:w-1/2 flex flex-col items-center md:items-start'>
+				<h1 className='text-lg font-bold mb-1 sm:text-3xl lg:text-4xl sm:mb-4'>
+					Frequently Asked <br className='hidden md:block' /> Questions
+				</h1>
+				<p className='grey-text text-xs sm:text-sm lg:text-base'>
+					Here are answers to some questions you might have.
+				</p>
+			</div>
+			<div className='flex flex-col gap-2 w-full sm:w-2/3 md:w-2/3 lg:w-3/4'>
+				{faqData.map((item, index) => (
+					<Accordion
+						key={index}
+						question={item.question}
+						answer={item.answer}
+					/>
+				))}
+				<p className='font-[500] text-[#767C8D]'>
+					Have more questions, contact{" "}
+					<a
+						href='mailto:hello@piiiple.com'
+						className='font-[600] text-[#2F88FF]'>
+						hello@piiipleai.com
+					</a>{" "}
+					via email.
+				</p>
+			</div>
+		</div>
+	);
 }
