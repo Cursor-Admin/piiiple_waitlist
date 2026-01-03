@@ -13,6 +13,7 @@ export default function Features() {
         <p className="md:text-[18px] text-[#767C8D] mb-5">
           Our AI platform simplifies the entire business integration <br className='block sm:hidden'/> process,<br className="hidden sm:block" /> from initial contact to successful onboarding.
         </p>
+        
         <div><Button cta="Get early access" /></div>
       </div>
       <div className="box-grid grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 pt-15 md:gap-6 lg:gap-8 w-full max-w-6xl mx-auto">

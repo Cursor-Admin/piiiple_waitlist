@@ -23,7 +23,7 @@ const cardVariants: Variants = {
 export default function FeaturesCard({ img, caption, text }: Props) {
   return (
     <motion.div
-      className="rounded-xl p-2 gap-1 feature-cards sm:rounded-2xl sm:p-3 sm:gap-2 flex flex-col justify-center items-center bg-white shadow-sm"
+      className="rounded-xl p-2 gap-1 feature-cards sm:rounded-2xl md:p-4 md:gap-2 flex flex-col justify-center items-center bg-white shadow-sm"
       variants={cardVariants}
       initial="hidden"
       whileInView="visible"
