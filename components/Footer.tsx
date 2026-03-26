@@ -95,7 +95,7 @@ export default function Footer() {
 					className='flex flex-col-reverse items-center text-[10px] sm:text-xs lg:text-sm text-[#101727] border-t border-[#E7E7E7] py-4 sm:flex-row sm:justify-between sm:py-7 w-full'
 					variants={{ hidden: { opacity: 0 }, visible: { opacity: 1 } }}>
 					<span className='font-[450]'>
-						&copy; 2025 Piiiple. All rights reserved
+						&copy; {new Date().getFullYear()} Piiiple. All rights reserved
 					</span>
 					<div className='flex gap-2 sm:gap-3 mb-2 sm:mb font-[450]'>
 						<span className=''>Terms of use</span>
